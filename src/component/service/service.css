@@ -37,14 +37,14 @@
 
 .outer-grid {
     display: grid;
-    grid-template-columns: repeat(3, 6fr,1fr, 6fr); /* Three columns in the outer grid */
-    gap: 10px; /* Gap between columns */
+    grid-template-columns: 1fr 3fr 1fr; /* Three columns in the outer grid */
+    gap: 5px; /* Gap between columns */
   }
 
   /* Define the inner grid */
   .inner-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Two columns in the inner grid */
+    grid-template-columns: repeat(4, 1fr); /* four columns in the inner grid */
     gap: 5px; /* Gap between columns in the inner grid */
   }
 
@@ -53,4 +53,9 @@
     border: 1px solid #333;
     padding: 10px;
     text-align: center;
+  }
+
+  .gridClass{
+    margin-left: 10%;
+    margin-right: 10%;
   }
