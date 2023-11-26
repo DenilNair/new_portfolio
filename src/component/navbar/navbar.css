@@ -1,0 +1,133 @@
+.sections{
+    padding-top: 4rem;  
+}
+.face{
+    color:rgb(255, 145, 0);
+    fill: rgb(255, 153, 0);
+}
+.mobileMenu{
+    display: none;
+}
+
+.youtube{
+    color:rgb(255, 72, 0);
+    fill: red;
+}
+
+.insta{
+    color:rgb(255, 0, 212);
+    fill: rgb(255, 0, 212);
+}
+
+.main-nav{
+    height: 5rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10rem 4fr 5fr 1fr 2rem;
+    position: fixed;
+    
+}
+.menuLink ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-column: 3/4;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.socialMedia{
+    grid-template-columns: 3fr repeat(3,1fr);
+}
+
+.socialMedia ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-column: 3/4;
+    list-style-type: none;
+    text-decoration: none;
+}
+.socialMedia ul li:first-child{
+    justify-content: right;
+}
+.menuLink ul li button{
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+.selectedList{
+    cursor: pointer;
+    border-bottom: 5px solid rgb(2, 176, 110);
+    border-radius: 10%;
+}
+
+.notSelectedList{
+    cursor: pointer;
+    border-radius: 10%;
+}
+.menuLink ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+
+.logo{
+    display: flex;
+    grid-column: 2/3;
+    align-items: center;
+}
+
+@media(max-width:850px) {
+    .mobileMenu{
+        display: block;
+        list-style-type: none;
+    text-decoration: none;
+        grid-column: 4/5;
+
+    }
+    .logo{
+        display: none; 
+    }
+    .mobileMenu a{
+        align-items: flex-end;
+        display: flex;
+        text-align: end;
+         justify-content: space-around;
+         list-style-type: none;
+    text-decoration: none;
+    }
+    .socialMedia{
+        display: none;
+    }
+    .menuLink{
+        display: none;
+    }
+}
+.mobileMenuLink ul{
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    list-style-type: none;
+    text-decoration: none;
+}
+.mobileMenuLink ul li:first-child{
+    transition-delay: 0.2s;
+}
+
+@media(min-width:850px) {
+    .mobileMenu{
+        display: none;
+    }
+    .logo{
+        display: block; 
+    }
+    .socialMedia{
+        display: block;
+    }
+    .menuLink{
+        display: block;
+    }
+}

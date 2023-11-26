@@ -1,0 +1,56 @@
+.mainService{
+    
+}
+.slider-container{
+    display: flex;
+
+    place-items: center center;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    margin-bottom: 20px;
+    grid-gap: 20px;
+}
+.slider{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    transition: transform 0.5s ease;
+}
+.cards{
+    display: grid;
+
+    place-items: center center;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    padding: 20px;
+    margin-bottom: 20px;
+    grid-gap: 20px;
+}
+.controls{
+    background: linear-gradient(black,rgb(162, 158, 158)
+    ) }
+
+@media screen and (max-width: 700px) {
+    .mainService{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.outer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 6fr,1fr, 6fr); /* Three columns in the outer grid */
+    gap: 10px; /* Gap between columns */
+  }
+
+  /* Define the inner grid */
+  .inner-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Two columns in the inner grid */
+    gap: 5px; /* Gap between columns in the inner grid */
+  }
+
+  /* Style for the grid items (just for demonstration purposes) */
+  .grid-item {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+  }
