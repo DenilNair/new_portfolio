@@ -35,9 +35,9 @@ const Service = () => {
       value: process.env.PUBLIC_URL + "/img/springboot.png",
     },
     { key: "Ionic", value: process.env.PUBLIC_URL + "/img/ionic.png" },
-    
+
     { key: "Ionic", value: process.env.PUBLIC_URL + "/img/docker.png" },
-    
+
     { key: "Ionic", value: process.env.PUBLIC_URL + "/img/k8.png" },
   ];
 
@@ -105,10 +105,8 @@ const Service = () => {
                   */}
       </div>
 
-      <Carousel cols={2} rows={1} gap={10} loop className="carousel">
-        <Carousel.Item
-          style={{ backgroundColor: "red" }}
-        >
+      <Carousel cols={2} rows={1} gap={2} loop className="carousel">
+        <Carousel.Item style={{ backgroundColor: "red" }}>
           <Card
             style={{ backgroundColor: "red" }}
             passedData="this is my first project in my life"
@@ -142,10 +140,7 @@ const Service = () => {
 const TechnologiesPair = ({ pair, cardStyle }) => {
   return (
     <div class="grid-item">
-      <Card
-        passedImage={pair.value}
-        passedStyle={cardStyle}
-      />
+      <Card passedImage={pair.value} passedStyle={cardStyle} />
     </div>
   );
 };

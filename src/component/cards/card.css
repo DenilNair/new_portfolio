@@ -8,10 +8,7 @@
 }
 
 .image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
+    display: block;
 }
 
 .card{
@@ -20,8 +17,7 @@
     display: flex;
     justify-content: center;
     position: relative;
-    overflow: hidden;
-    align-items: center;
+    display: block;
 }
 
 .image{
