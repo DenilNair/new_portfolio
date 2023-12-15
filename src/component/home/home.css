@@ -1,5 +1,9 @@
 .mainHome{
     
+    padding-top: 4rem;
     height: 700px;
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }

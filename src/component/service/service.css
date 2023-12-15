@@ -1,5 +1,7 @@
 .mainService{
-    
+    padding: 2%;
+    position: relative;
+    padding-top: 4rem;
 }
 .slider-container{
     display: flex;
@@ -50,12 +52,38 @@
 
   /* Style for the grid items (just for demonstration purposes) */
   .grid-item {
-    border: 1px solid #333;
+    /*border: 1px solid #333; */
     padding: 10px;
     text-align: center;
+    display: flex;
+    justify-content: center;
   }
 
   .gridClass{
     margin-left: 10%;
     margin-right: 10%;
   }
+.carousel{
+  align-items: center;
+  height: 500px;
+  justify-content: center;
+  display: flex;
+    
+}
+.slider{
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+.projectItem{
+  height: 200px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  
+}
+
+.sub-headings{
+  margin: 10px 10px 20px 0px;
+}

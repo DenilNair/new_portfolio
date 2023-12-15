@@ -23,9 +23,16 @@
     height: 5rem;
     width: 100%;
     display: grid;
-    grid-template-columns: 10rem 4fr 5fr 1fr 2rem;
+    grid-template-columns: 10rem 3fr 5fr  1fr 1fr 2rem;
     position: fixed;
-    
+    background-color: black;
+    padding: 2%;
+    margin: 0px;
+    z-index: 1000;
+}
+
+.main-nav-div{
+    margin: 0;
 }
 .menuLink ul{
     display: flex;
@@ -130,4 +137,17 @@
     .menuLink{
         display: block;
     }
+}
+
+.toogleMode{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    display: flex;
+    align-items: center;
+    margin:0px;
+    padding: 0px;
+    width: 50px;
+    height: 50px;
 }

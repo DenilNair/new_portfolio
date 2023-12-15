@@ -1,14 +1,22 @@
-
+import { useState } from 'react';
 import './App.css';
 import Navbar from './component/navbar/navbar';
 import Scroll from './component/scrollButtonComponent/scroll';
 function App() {
+const [screenMode,setScreenMode]=useState('#0D1A2D');
 
+const handleScreenMode=(data)=>{
+  console.log('data from navigation bar about screen mode',data)
   
+  setScreenMode(data);
+}
+  const siteStyle={
+    backgroundColor:screenMode
+  }
   return (
-    <div className="App">
+    <div className="App"style={siteStyle}>
       
-      <Navbar/>
+      <Navbar sendScreenModeToApp={handleScreenMode}/>
        {/* <Routes>
         <Route path="/" element={<Home />} />
         
