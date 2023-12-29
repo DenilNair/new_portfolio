@@ -2,6 +2,7 @@ import React from "react";
 import "./service.css";
 import Card from "../cards/card";
 import Carousel from "react-grid-carousel";
+import "react-grid-carousel/";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -15,6 +16,20 @@ const Service = () => {
     width: "400px",
     height: "400px",
   };
+
+  const projectList=[
+    { key: "Encrypted QR", value: process.env.PUBLIC_URL + "/img/angular.png" },
+    { key: "MultiTasker", value: process.env.PUBLIC_URL + "/img/java.jpg" },
+    
+    { key: "Flight Booking System", value: process.env.PUBLIC_URL + "/img/node.png" },
+    
+    { key: "Home Automation System", value: process.env.PUBLIC_URL + "/img/node.png" },
+    { key: "Automated Railway System", value: process.env.PUBLIC_URL + "/img/node.png" },
+    { key: "Automated Railway System", value: process.env.PUBLIC_URL + "/img/node.png" },
+    
+  ]
+
+
   const technologiesList = [
     { key: "Angular", value: process.env.PUBLIC_URL + "/img/angular.png" },
     { key: "Java", value: process.env.PUBLIC_URL + "/img/java.jpg" },
@@ -51,6 +66,43 @@ const Service = () => {
 
   return (
     <div className="mainService">
+      <div>
+        <h4 className="sub-headings">Projects</h4>
+        {/*<div>
+          <div className="gridClass">
+            <div class="outer-grid">
+              <div class="grid-item">Previous</div>
+              <div class="grid-item">
+                <div class="inner-grid">
+                  {technologiesList.map((pair, index) => (
+                    <TechnologiesPair key={index} pair={pair} />
+                  ))}
+                </div>
+              </div>
+
+              <div class="grid-item">Next</div>
+            </div>
+          </div>
+        </div>
+                  */}
+      </div>
+
+      <Carousel cols={3} rows={1} gap={0} loop className="carousel">
+      {projectList.map((pair, index) => (
+            <Carousel.Item>
+            <div className="cardele">
+              <Card
+                className="carr"
+                passedData={pair.key}
+                passedImage="https://picsum.photos/800/600?random=2"
+                passedStyle={projectCardStyle}
+              />
+            </div>
+          </Carousel.Item>
+          ))}
+        
+        {/* ... */}
+      </Carousel>
       <h4 className="sub-headings">Technologies</h4>
       <div className="slider">
         <Slider {...settings}>
@@ -84,55 +136,6 @@ const Service = () => {
          */}
       </div>
       <br />
-      <div>
-        <h4 className="sub-headings">Projects</h4>
-        {/*<div>
-          <div className="gridClass">
-            <div class="outer-grid">
-              <div class="grid-item">Previous</div>
-              <div class="grid-item">
-                <div class="inner-grid">
-                  {technologiesList.map((pair, index) => (
-                    <TechnologiesPair key={index} pair={pair} />
-                  ))}
-                </div>
-              </div>
-
-              <div class="grid-item">Next</div>
-            </div>
-          </div>
-        </div>
-                  */}
-      </div>
-
-      <Carousel cols={2} rows={1} gap={2} loop className="carousel">
-        <Carousel.Item style={{ backgroundColor: "red" }}>
-          <Card
-            style={{ backgroundColor: "red" }}
-            passedData="this is my first project in my life"
-            passedImage="https://picsum.photos/800/600?random=2"
-            passedStyle={projectCardStyle}
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <Card
-            passedData="fjgj"
-            passedImage="https://picsum.photos/800/600?random=2"
-            passedStyle={projectCardStyle}
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <Card
-            passedData="fjgj"
-            passedImage="https://picsum.photos/800/600?random=2"
-            passedStyle={projectCardStyle}
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          {/* anything you want to show in the grid */}
-        </Carousel.Item>
-        {/* ... */}
-      </Carousel>
     </div>
   );
 };

@@ -1,9 +1,50 @@
-.mainHome{
+.mainHome {
+  padding-top: 4rem;
+  height: 700px;
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 17px;
+}
+
+.gridClass {
+  height: 100%;
+}
+.outer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr; /* Three columns in the outer grid */
+  gap: 5px; /* Gap between columns */
+
+  font-family:  'Quicksand', sans-serif;
+}
+.grid-item{
+    font-family:  'Quicksand', sans-serif;
+    font-size: xx-large
+
+}
+/* Define the inner grid */
+
+
+@media screen and (max-width: 600px) {
+  .gridClass {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .gridClass {
+    font-size: 20px;
+  }
+}
+.downloadCV{
+    font-family: 'Quicksand', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 15%;
+    border-width: 2px;
+    border-color: white;
+    padding: 2%;
     
-    padding-top: 4rem;
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
 }

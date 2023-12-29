@@ -67,7 +67,7 @@
   align-items: center;
   height: 500px;
   justify-content: center;
-  display: flex;
+  
     
 }
 .slider{
@@ -81,9 +81,24 @@
   justify-content: center;
   align-items: center;
   display: flex;
-  
+
 }
 
 .sub-headings{
   margin: 10px 10px 20px 0px;
+}
+
+.sc-dnqmqq bVoXXg{
+  align-items: center;
+  justify-content: center;
+}
+
+.carr{
+  padding-left: 200px;
+}
+
+.cardele{
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }

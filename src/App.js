@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Navbar from './component/navbar/navbar';
 import Scroll from './component/scrollButtonComponent/scroll';
+import Foter from './component/footer/foter';
 function App() {
 const [screenMode,setScreenMode]=useState('#0D1A2D');
 
@@ -26,7 +27,10 @@ const handleScreenMode=(data)=>{
         <Route path="/contact" element={<Contact />} />
       </Routes>
            */}
-      <Scroll/>
+      <Scroll/>  
+      <Foter/> 
+
+
     </div>
   );
 }

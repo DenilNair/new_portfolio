@@ -83,6 +83,17 @@ const Navbar = ({sendScreenModeToApp}) => {
               Service
             </li>
 
+            <li className={currentSection == "service" ? "selectedList" : "notSelectedList"} onClick={() => {
+              scroolToSection(serviceRef);
+              changeCurrentSection("service")
+            }}>
+
+              {/* earlier using link tag to route to particular section to add funtionality to scrool down removing it 
+                <Link to='/home'>Home</Link>
+                */}
+              Blog
+            </li>
+
             <li className={currentSection == "contact" ? "selectedList" : "notSelectedList"} onClick={() => {
               scroolToSection(contactRef);
               changeCurrentSection("contact")
