@@ -6,8 +6,8 @@ function Card(props) {
       <div className="card" style={props.passedStyle}>
         
           <img className="image" style={props.passedStyle} src={props.passedImage} alt="project1" />
-      
-        <div className="card-data">{props.passedData}</div>
+      <div className="card-header">{props.passedData}</div>
+        <div className="card-data">{props.passedDescription}</div>
       </div>
     
   );

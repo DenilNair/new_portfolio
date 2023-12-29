@@ -1,10 +1,41 @@
 .card-data{
+    font-family: 'Quicksand', sans-serif;
+  
     color: white;
     text-align: center;
+    justify-content: center;
     position: absolute;
+    display: flex;
+    padding: 5%;
     top:50%;
+    transform: translateY(-50%);
+    height: 100%;
     left: 50%;
-    transform: translate(-50%,-50%)
+    width: 100%;
+    transition: 0.5s ease;
+    opacity: 0;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.5); 
+    transform: translate(-50%,-50%) ;
+    
+    -ms-transform: translate(-50%,-50%) 
+    
+}
+
+.card-header{
+    color: white;
+    text-align: center;
+    justify-content: end;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 50%;
+    width: 100%;
+    transition: 0.5s ease;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.5); ;
+    transform: translate(-50%,-50%) ;
+    -ms-transform: translate(-50%,-50%) 
 }
 
 .image{
@@ -12,7 +43,7 @@
 }
 
 .card{
-    border-radius: 4px;    
+    border-radius: 5%;    
     align-items: center;
     display: flex;
     justify-content: center;
@@ -23,3 +54,17 @@
 .image{
     border-radius: 4px;
 }
+
+
+.card:hover .card-data {
+    opacity: 1;
+  }
+
+ 
+.card:hover .card-header {
+    opacity: 0;
+  }
+ 
+.card:hover .image {
+    opacity: 0.7;
+  }
