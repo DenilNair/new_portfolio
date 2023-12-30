@@ -30,11 +30,10 @@
   }
 }
 @font-face{
-  font-family: "Gumela";
-  src: url('../src/fonts/Oswald-Medium.ttf');
+  font-family:  'Quicksand', sans-serif;
 }
 *{
-  font-family:"Gumela";
+  font-family:  'Quicksand', sans-serif;
   font-weight:normal;
   font-size: 20px;
   text-align: center;
