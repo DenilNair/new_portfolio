@@ -2,6 +2,8 @@
     padding: 2%;
     position: relative;
     padding-top: 4rem;
+    font-family: 'Quicksand', sans-serif;
+  
 }
 .slider-container{
     display: flex;
