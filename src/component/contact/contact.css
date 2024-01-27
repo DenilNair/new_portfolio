@@ -1,4 +1,31 @@
 .mainContact{
-    height: 700px;
     margin: 2%;
+    padding: 2%;
+    position: relative;
+    padding-top: 4rem;
+    font-family: 'Quicksand', sans-serif;
+    
+    display: flex;
 }
+
+.formContact{
+    justify-content: center;
+    display: flex;
+
+    place-items: center center;
+}
+
+.img-color-fill {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    line-height: 0;
+  }
+  .img-color-fill div {
+    
+  }
+  .img-color-fill img {
+    width: 256px;
+    height: auto;
+    opacity: 0;
+  }

@@ -29,9 +29,12 @@
     transform: rotate(360deg);
   }
 }
+
 @font-face{
   font-family:  'Quicksand', sans-serif;
 }
+
+
 *{
   font-family:  'Quicksand', sans-serif;
   font-weight:normal;

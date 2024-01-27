@@ -13,8 +13,8 @@ const Service = () => {
     height: "100px",
   };
   const projectCardStyle = {
-    width: "300px",
-    height: "300px",
+    width: "400px",
+    height: "200px",
   };
 
   const projectList = [
