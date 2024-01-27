@@ -46,7 +46,7 @@ Currently associated with barclays bank.</div>
             <div class="grid-item">
               <a
                 className="downloadCV"
-                href={require("../../nahid_resume.pdf")}
+                href={require("../../resume_27_01_24.pdf")}
                 download="myresume"
               >
                 Get My CV
