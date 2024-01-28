@@ -195,6 +195,7 @@ const CarouselTechnologiesPair = ({ pair, cardStyle }) => {
           passedData={pair.key}
           passedImage={pair.value}
           passedStyle={cardStyle}
+          passedDescription={pair.description}
         />
       </Carousel.Item>
     </div>
