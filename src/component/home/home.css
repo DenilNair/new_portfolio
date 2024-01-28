@@ -53,11 +53,18 @@
   .gridClass {
     font-size: 10px;
   }
+  .aboutIntro{
+    display:none;
+  }
 }
 
 @media screen and (max-width: 800px) {
   .gridClass {
     font-size: 20px;
+  }
+  
+  .aboutIntro{
+    display:none;
   }
 }
 .downloadCV{

@@ -124,12 +124,10 @@ const Service = () => {
         {projectList.map((pair, index) => (
           <Carousel.Item>
             <div className="cardele">
-              <Card
-                className="carr"
-                passedData={pair.key}
-                passedDescription={pair.description}
-                passedImage="https://picsum.photos/800/600?random=2"
-                passedStyle={projectCardStyle}
+              <CarouselTechnologiesPair
+                key={index}
+                pair={pair}
+                cardStyle={projectCardStyle}
               />
             </div>
           </Carousel.Item>
@@ -139,15 +137,22 @@ const Service = () => {
       </Carousel>
       <h4 className="sub-headings">Technologies</h4>
       <div className="slider">
-        <Slider {...settings}>
-          {technologiesList.map((pair, index) => (
+      <Carousel  cols={6} rows={1} gap={0} responsive={{desktop:{items:6},tablet:{items:4},mobile:{items:9}}} loop className="carousel">
+        {technologiesList.map((pair, index) => (
+          <Carousel.Item>
+            <div className="cardele">
             <TechnologiesPair
               key={index}
               pair={pair}
               cardStyle={serviceCardStyle}
             />
-          ))}
-        </Slider>
+            </div>
+          </Carousel.Item>
+        ))}
+
+        {/* ... */}
+      </Carousel>
+       
       </div>
       <div>
         {/** 
