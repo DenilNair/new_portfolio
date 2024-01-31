@@ -15,7 +15,8 @@ const Service = () => {
   const projectCardStyle = {
     width: "400px",
     height: "200px",
-  };
+    padding: "20px",
+  }
 
   const projectList = [
     {
