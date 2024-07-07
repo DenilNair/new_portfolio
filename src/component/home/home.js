@@ -1,12 +1,10 @@
 import React from "react";
 import "./home.css";
-import VideoPlayer from '../videos/video'
 const Home = () => {
   return (
     <div className="mainHome">
       <div>
         <div className="gridClass">
-          <VideoPlayer/>
           <div class="outer-grid-home">
             <div className="grid-item-home">
               <div className="homeHeading">
