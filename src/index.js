@@ -4,13 +4,21 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter ,Route,Routes} from 'react-router-dom';
+import VideoPlayer from './component/videos/video';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <App />
+    <Routes>
+    <Route path="/" element={<App />}></Route>
+    
+    <Route path="/video/:id" element={<VideoPlayer/>}>
+
+    </Route>
+    </Routes>
+   
     </BrowserRouter>
     
   </React.StrictMode>

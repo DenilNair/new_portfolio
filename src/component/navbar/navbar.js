@@ -8,6 +8,7 @@ import Home from "../home/home";
 import Contact from "../contact/contact";
 import Service from "../service/service";
 import Blog from "../blog/blog";
+
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = ({ sendScreenModeToApp }) => {
